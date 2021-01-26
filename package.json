@@ -1,0 +1,32 @@
+{
+  "name": "hipstapas.npm",
+  "version": "1.0.0",
+  "description": "[https://hipstapas.dev/](https://hipstapas.dev/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keenthinker/hipstapas.npm.git"
+  },
+  "author": "keenthinker.com",
+  "license": "MIT",
+  "keywords": [
+    "saas",
+    "hipstapas",
+    "password",
+    "uuid",
+    "wordlist",
+    "random",
+    "npm",
+    "hipstapas.dev"
+  ],
+  "dependencies": {
+    "uuid": "^8.3.2"
+  },
+  "bugs": {
+    "url": "https://github.com/keenthinker/hipstapas.npm/issues"
+  },
+  "homepage": "https://github.com/keenthinker/hipstapas.npm#readme"
+}
