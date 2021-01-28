@@ -1,7 +1,7 @@
-import { randomNumber } from '../helpers/random.js';
-import { validate, evaluateValidation } from '../helpers/validator.js';
-import { wordlistLargeMap } from '../helpers/wordlistLarge.js';
-import { generationResult, emptyObject } from '../helpers/utils.js';
+const { randomNumber } = require('../helpers/random');
+const { validate, evaluateValidation } = require('../helpers/validator');
+const { wordlistLargeMap } = require('../helpers/wordlistLarge');
+const { generationResult, emptyObject } = require('../helpers/utils');
 
 function generateWordlist(rolls) {
     // generate words the EFF way: https://www.eff.org/de/dice

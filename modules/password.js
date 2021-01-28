@@ -1,6 +1,6 @@
-import { randomNumber, randomCharacter } from '../helpers/random.js';
-import { validate, evaluateValidation } from '../helpers/validator.js';
-import { generationResult, isBoolean, emptyObject } from '../helpers/utils.js';
+const { randomNumber, randomCharacter } = require('../helpers/random');
+const { validate, evaluateValidation } = require('../helpers/validator');
+const { generationResult, isBoolean, emptyObject } = require('../helpers/utils');
 
 /**
  * Validates and calculates the upper and the lower bound for the generator function 

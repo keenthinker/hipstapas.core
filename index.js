@@ -1,7 +1,7 @@
-import { validateAndGeneratePassphrases } from './modules/password.js';
-import { validateAndGenerateUuids } from './modules/uuid.js';
-import { validateAndGenerateWordlists } from './modules/wordlist.js';
-import { validateAndGenerateRandomNumbers } from './modules/random.js';
+const { validateAndGeneratePassphrases } = require('./modules/password')
+const { validateAndGenerateUuids } = require('./modules/uuid')
+const { validateAndGenerateWordlists } = require('./modules/wordlist')
+const { validateAndGenerateRandomNumbers } = require('./modules/random')
 
 function password(options) {
     return validateAndGeneratePassphrases(options);

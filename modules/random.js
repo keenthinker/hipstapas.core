@@ -1,6 +1,6 @@
-import { randomNumber } from '../helpers/random.js';
-import { validate, evaluateValidation, validateResultObject } from '../helpers/validator.js';
-import { generationResult, isBoolean, emptyObject } from '../helpers/utils.js';
+const { randomNumber } = require('../helpers/random');
+const { validate, evaluateValidation, validateResultObject } = require('../helpers/validator');
+const { generationResult, isBoolean, emptyObject } = require('../helpers/utils');
 
 function generateRandomNumbers(min, max, noDuplicates, sort, resultsCount) {
     let randomNumbers = [];

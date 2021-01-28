@@ -1,6 +1,6 @@
 const { v4: uuidv4 } = require('uuid');
-import { validate } from '../helpers/validator.js';
-import { generationResult, emptyObject } from '../helpers/utils.js';
+const { validate } = require('../helpers/validator')
+const { generationResult, emptyObject } = require('../helpers/utils')
 
 function generateUuids(resultsCount)
 {
