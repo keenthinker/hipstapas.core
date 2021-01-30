@@ -7,11 +7,14 @@ describe('uuid generation', () => {
         test('property success is true', () => {
             expect(uuidWithDefaultOptions.success).toBe(true)
         })
-        test('result is of type string', () => {
-            expect(utils.isString(uuidWithDefaultOptions.result)).toBe(true)
+        test('result is of type array', () => {
+            expect(Array.isArray(uuidWithDefaultOptions.result)).toBe(true)
+        })
+        test('result value is of type string', () => {
+            expect(utils.isString(uuidWithDefaultOptions.result[0])).toBe(true)
         })
         test('result length is 36 characters', () => {
-            expect(uuidWithDefaultOptions.result.length).toBe(36)
+            expect(uuidWithDefaultOptions.result[0].length).toBe(36)
         })
     })
 
@@ -20,11 +23,14 @@ describe('uuid generation', () => {
         test('property success is true', () => {
             expect(uuidWithDefaultOptions.success).toBe(true)
         })
-        test('result is of type string', () => {
-            expect(utils.isString(uuidWithDefaultOptions.result)).toBe(true)
+        test('result is of type array', () => {
+            expect(Array.isArray(uuidWithDefaultOptions.result)).toBe(true)
+        })
+        test('result value is of type string', () => {
+            expect(utils.isString(uuidWithDefaultOptions.result[0])).toBe(true)
         })
         test('result length is 36 characters', () => {
-            expect(uuidWithDefaultOptions.result.length).toBe(36)
+            expect(uuidWithDefaultOptions.result[0].length).toBe(36)
         })
     })
 
@@ -35,14 +41,14 @@ describe('uuid generation', () => {
         test('property success is true', () => {
             expect(uuidWithDefaultOptions.success).toBe(true)
         })
-        test('result is of type string', () => {
-            expect(utils.isString(uuidWithDefaultOptions.result)).toBe(true)
+        test('result is of type array', () => {
+            expect(Array.isArray(uuidWithDefaultOptions.result)).toBe(true)
         })
         test('result is of type string', () => {
-            expect(utils.isString(uuidWithDefaultOptions.result)).toBe(true)
+            expect(utils.isString(uuidWithDefaultOptions.result[0])).toBe(true)
         })
         test('result length is 36 characters', () => {
-            expect(uuidWithDefaultOptions.result.length).toBe(36)
+            expect(uuidWithDefaultOptions.result[0].length).toBe(36)
         })
     })
 
@@ -57,7 +63,7 @@ describe('uuid generation', () => {
         test('result is of type array', () => {
             expect(Array.isArray(uuidWithDefaultOptions.result)).toBe(true)
         })
-        test('result array length is 36 characters', () => {
+        test('result array length is 5', () => {
             expect(uuidWithDefaultOptions.result.length).toBe(optionResultsCount)
         })
     })
@@ -66,7 +72,7 @@ describe('uuid generation', () => {
         const uuidWithDefaultOptions = uuid()
         test('result contains 4 hyphens', () => {
             const pattern = /\-/g
-            const matchResult = uuidWithDefaultOptions.result.match(pattern)
+            const matchResult = uuidWithDefaultOptions.result[0].match(pattern)
             expect(Array.isArray(matchResult)).toBe(true)
             expect(matchResult.length).toBe(4)
             expect(matchResult[0]).toBe('-')

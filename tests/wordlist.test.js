@@ -7,11 +7,14 @@ describe('wordlist generation', () => {
         test('property success is true', () => {
             expect(wordlistWithDefaultOptions.success).toBe(true)
         })
+        test('result is of type array', () => {
+            expect(Array.isArray(wordlistWithDefaultOptions.result)).toBe(true)
+        })
         test('result is of type string', () => {
-            expect(utils.isString(wordlistWithDefaultOptions.result)).toBe(true)
+            expect(utils.isString(wordlistWithDefaultOptions.result[0])).toBe(true)
         })
         test('result is containing 6 words', () => {
-            expect(wordlistWithDefaultOptions.result.split(' ').length).toBe(6)
+            expect(wordlistWithDefaultOptions.result[0].split(' ').length).toBe(6)
         })
     })
 })

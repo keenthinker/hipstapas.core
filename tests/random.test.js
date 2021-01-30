@@ -6,12 +6,15 @@ describe('random generation', () => {
         test('property success is true', () => {
             expect(randomWithDefaultOptions.success).toBe(true)
         })
+        test('result is of type array', () => {
+            expect(Array.isArray(randomWithDefaultOptions.result)).toBe(true)
+        })
         test('result is of type int', () => {
-            expect(Number.isInteger(randomWithDefaultOptions.result)).toBe(true)
+            expect(Number.isInteger(randomWithDefaultOptions.result[0])).toBe(true)
         })
         test('result is within default range', () => {
-            expect(randomWithDefaultOptions.result).toBeGreaterThanOrEqual(1)
-            expect(randomWithDefaultOptions.result).toBeLessThanOrEqual(1048576)
+            expect(randomWithDefaultOptions.result[0]).toBeGreaterThanOrEqual(1)
+            expect(randomWithDefaultOptions.result[0]).toBeLessThanOrEqual(1048576)
         })
     })
 })
