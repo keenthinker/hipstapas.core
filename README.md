@@ -27,7 +27,7 @@ npm install hipstapas.core
 
 # Quick Start
 
-Import the module and call the generator (the default configuration values are described in [Configuration Properties](https://github.com/keenthinker/hipstapas.core/blob/main/README.md#Configurtion-Properties)):
+Import the module and call the generator (the default configuration values are described in [Configuration Properties](https://github.com/keenthinker/hipstapas.core/blob/main/README.md#Configuration-Properties)):
 
 1. `password`
 2. `uuid`
