@@ -1,5 +1,5 @@
 {
-  "name": "hipstapas.npm",
+  "name": "hipstapas.core",
   "version": "1.1.0",
   "description": "[https://hipstapas.dev/](https://hipstapas.dev/)",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/keenthinker/hipstapas.npm.git"
+    "url": "git+https://github.com/keenthinker/hipstapas.core.git"
   },
   "author": "keenthinker.com",
   "license": "MIT",
@@ -26,9 +26,9 @@
     "uuid": "^8.3.2"
   },
   "bugs": {
-    "url": "https://github.com/keenthinker/hipstapas.npm/issues"
+    "url": "https://github.com/keenthinker/hipstapas.core/issues"
   },
-  "homepage": "https://github.com/keenthinker/hipstapas.npm#readme",
+  "homepage": "https://github.com/keenthinker/hipstapas.core#readme",
   "devDependencies": {
     "jest": "^26.6.3"
   }

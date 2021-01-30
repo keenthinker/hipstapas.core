@@ -1,7 +1,7 @@
 function generationResult(validateResult, results) {
         return {
                 "success": validateResult.success,
-                "result": results.length == 1 ? results[0] : results,
+                "result": results,
                 "error": validateResult.error
         };
 }
