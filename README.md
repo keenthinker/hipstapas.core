@@ -20,10 +20,10 @@ npm install hipstapas.core
 
 * Default configurations - generation is as simple as calling a method
 * Four different generators
-    1. Passphrases/Passwords generator
-    2. UUID v4 generator
-    3. [EFF dice-generated passhprases](https://www.eff.org/dice)
-    4. [Cryptographically secure pseudo-random number generator](https://nodejs.org/api/crypto.html#crypto_crypto_randombytes_size_callback)
+  1. Passphrases/Passwords generator
+  2. UUID v4 generator
+  3. [EFF dice-generated passhprases](https://www.eff.org/dice)
+  4. [Cryptographically secure pseudo-random number generator](https://nodejs.org/api/crypto.html#crypto_crypto_randombytes_size_callback)
 
 # Quick Start
 
