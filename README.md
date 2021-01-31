@@ -104,6 +104,18 @@ One configuration property is supported by every generator:
 
 |Parameter name|Type|Allowed values|Default value|
 |----|----|----|----|
+|`alphabetSmall`|Boolean|true..false|true|
+|If set to true the generation alphabet contains small characters: *abcdefghijklmnopqrstuvwxyz*|
+|`alphabetCapital`|Boolean|true..false|true|
+|If set to true the generation alphabet contains capital characters: *ABCDEFGHIJKLMNOPQRSTUVWXYZ*|
+|`alphabetNumber`|Boolean|true..false|true|
+|If set to true the generation alphabet contains numbers: *0123456789*|
+|`alphabetSpecial`|Boolean|true..false|true|
+|If set to true the generation alphabet contains special characters: <em>.,+-*/!?;:{}()[]%$&~#@</em>||
+|`lengthMin`|Number|1..2048|16
+|Defines the minimal length of the generated phrase|
+|`lengthMax`|Number|1..2048|32
+|Defines the maximal length of the generated phrase|
 |`resultsCount`|Number|1..100|1|
 |Defines how many results should be generated at once|
 
@@ -118,6 +130,8 @@ One configuration property is supported by every generator:
 
 |Parameter name|Type|Allowed values|Default value|
 |----|----|----|----|
+|`words`|Number|1..50|6|
+|Defines how many results should be generated at once|
 |`resultsCount`|Number|1..100|1|
 |Defines how many results should be generated at once|
 
@@ -125,6 +139,14 @@ One configuration property is supported by every generator:
 
 |Parameter name|Type|Allowed values|Default value|
 |----|----|----|----|
+|`min`|Number|1..1048576|1|
+|Defines the lower bound of the number generator|
+|`max`|Number|1..1048576|1048576|
+|Defines the upper bound of the number generator|
+|`sort`|Boolean|true..false|false|
+|Sorts the generated number sequence|
+|`noDuplicates`|Boolean|true..false|false|
+|The generated number sequence should contain only unique numbers|
 |`resultsCount`|Number|1..100|1|
 |Defines how many results should be generated at once|
 
