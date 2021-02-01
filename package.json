@@ -1,7 +1,7 @@
 {
   "name": "hipstapas.core",
   "version": "1.1.0",
-  "description": "[https://hipstapas.dev/](https://hipstapas.dev/)",
+  "description": "Easy and unobtrusive generation of secure strings, uuids, passphrases (using EFF wordlists) and random numbers.",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -13,13 +13,16 @@
   "author": "keenthinker.com",
   "license": "MIT",
   "keywords": [
-    "saas",
     "hipstapas",
     "password",
+    "passphrase",
+    "secure string",
     "uuid",
     "wordlist",
     "random",
     "npm",
+    "eff",
+    "dice",
     "hipstapas.dev"
   ],
   "dependencies": {
