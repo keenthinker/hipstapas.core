@@ -1,11 +1,15 @@
 # hipstapas.core
 
+![npm](https://img.shields.io/npm/v/hipstapas.core)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/keenthinker/hipstapas.core)
+![Github License](https://img.shields.io/badge/license-MIT-blue)
 ![Node.js CI](https://github.com/keenthinker/hipstapas.core/workflows/Node.js%20CI/badge.svg)
 
-# 
+
 Easy and unobtrusive generation of secure strings, uuids, passphrases using EFF wordlists and random numbers.
 
 This package is the core behind [hipstapas.dev](https://hipstapas.dev) - the Hipster Password Helper As A Service, that lets you generate passphrases from anywhere in a second.
+#
 
 ## Table of content
 
