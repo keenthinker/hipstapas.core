@@ -1,6 +1,6 @@
 {
   "name": "hipstapas.core",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Easy and unobtrusive generation of secure strings, uuids, passphrases (using EFF wordlists) and random numbers.",
   "main": "index.js",
   "scripts": {
