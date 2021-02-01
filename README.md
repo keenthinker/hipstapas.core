@@ -7,6 +7,23 @@ Easy and unobtrusive generation of secure strings, uuids, passphrases using EFF 
 
 This package is the core behind [hipstapas.dev](https://hipstapas.dev) - the Hipster Password Helper As A Service, that lets you generate passphrases from anywhere in a second.
 
+## Table of content
+
+- [Installation](#installation)
+- [Features](#features)
+- [Quick Start](#quick-start)
+- [Basic concepts](#basic-concepts)
+  - [Input](#input)
+  - [Validation](#validation)
+  - [Output](#output)
+- [Configuration Properties](#configuration-properties)
+  - [password](#password)
+  - [uuid](#uuid)
+  - [wordlist](#wordlist)
+  - [random](#random)
+- [Examples](#examples)
+- [License](#license)
+
 # Installation
 This is a Node.js module.
 
@@ -31,7 +48,7 @@ npm install hipstapas.core
 
 # Quick Start
 
-Import the module and call the generator (the default configuration values are described in [Configuration Properties](https://github.com/keenthinker/hipstapas.core/blob/main/README.md#Configuration-Properties)):
+Import the module and call the generator (the default configuration values are documented in the [Configuration Properties](#configuration-properties) section):
 
 1. `password`
 2. `uuid`
@@ -71,7 +88,7 @@ The generation result is an object, that has three properties:
 
 Example of a *successful* uuid generation:
 
-```
+```JavaScript
 {
   success: true,
   result: [ '72e2aecd-3f5b-45c6-abe6-a438428822b3' ],
