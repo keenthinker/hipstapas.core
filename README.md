@@ -178,6 +178,55 @@ const fiftyPasswords = hipstapasCore.password({ resultsCount: 50 })
 const fiftyUuids = hipstapasCore.uuid({ resultsCount: 50 })
 const fiftyPassphrases = hipstapasCore.wordlist({ resultsCount: 50 })
 const fiftyRandomNumbers = hipstapasCore.random({ resultsCount: 50 })
+
+/*
+- generate 10 passphrases at once
+- where each phrase is exactly 5 characters long
+- excluding special and capital characters = using only small characters and numbers
+*/
+const options = {
+  resultsCount: 10,
+  lengthMin: 5,
+  lengthMax: 5,
+  alphabetSpecial: false,
+  alphabetCapital: false
+}
+const passwords = hipstapasCore.password(options)
+/* sample output:
+{
+  success: true,
+  result: [
+    '1p9d7', 'h88a2',
+    'j6yzp', 'fftkg',
+    '8d40c', 'uqp3q',
+    'yj9wc', 'qjsch',
+    'qnlrk', 'men3u'
+  ],
+  error: ''
+}
+*/
+
+/*
+- generate 5 random numbers at once
+- every number should be >= 10 and <= 100
+- sort the result sequence
+- there should be no duplicates in the result sequence
+*/
+const optionsRandom = {
+  resultsCount: 5,
+  min: 10,
+  max: 100,
+  sort: true,
+  noDuplicates: true
+}
+const randomNumbers = hipstapasCore.random(optionsRandom)
+/* sample output: 
+{ 
+  success: true, 
+  result: [ 30, 35, 52, 86, 88 ], 
+  error: '' 
+}
+*/
 ```
 
 # License
