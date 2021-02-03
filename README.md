@@ -9,9 +9,8 @@
 Easy and unobtrusive generation of secure strings, uuids, passphrases using EFF wordlists and random numbers.
 
 This package is the core behind [hipstapas.dev](https://hipstapas.dev) - the Hipster Password Helper As A Service, that lets you generate passphrases from anywhere in a second.
-#
 
-## Table of content
+# Table of content
 
 - [Installation](#installation)
 - [Features](#features)
@@ -29,7 +28,7 @@ This package is the core behind [hipstapas.dev](https://hipstapas.dev) - the Hip
 - [License](#license)
 
 # Installation
-This is a Node.js module.
+This is a Node.js module hosted on npmjs: https://www.npmjs.com/package/hipstapas.core.
 
 Installation is done using the npm install command:
 
