@@ -1,6 +1,6 @@
 {
   "name": "hipstapas.core",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Easy and unobtrusive generation of secure strings, uuids, passphrases (using EFF wordlists) and random numbers.",
   "main": "index.js",
   "scripts": {
@@ -30,9 +30,9 @@
   },
   "homepage": "https://github.com/keenthinker/hipstapas.core#readme",
   "devDependencies": {
-    "jest": "^30.4.2"
+    "jest": "^25.1.0"
   },
-  "dependencies": {
-    "uuid": "^11.1.1"
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true
   }
 }

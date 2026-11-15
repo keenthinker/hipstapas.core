@@ -70,6 +70,15 @@ describe('uuid generation', () => {
 
     describe('correct format', () => {
         const uuidWithDefaultOptions = uuid()
+        test('generates UUID v4 values with the correct variant', () => {
+            const generated = uuid({ resultsCount: 100 })
+            expect(generated.success).toBe(true)
+            expect(generated.result).toHaveLength(100)
+            for (const value of generated.result) {
+                expect(value).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/)
+            }
+            expect(new Set(generated.result).size).toBe(100)
+        })
         test('result contains 4 hyphens', () => {
             const pattern = /\-/g
             const matchResult = uuidWithDefaultOptions.result[0].match(pattern)

@@ -1,4 +1,4 @@
-const { v4: uuidv4 } = require('uuid');
+const { randomUUID } = require('crypto');
 const { validate } = require('../helpers/validator')
 const { generationResult, emptyObject } = require('../helpers/utils')
 
@@ -6,7 +6,7 @@ function generateUuids(resultsCount)
 {
     let uuids = [];
     for (let count = 0; count < resultsCount; count++) {
-        uuids.push(uuidv4());
+        uuids.push(randomUUID());
     }
 
     return uuids;
